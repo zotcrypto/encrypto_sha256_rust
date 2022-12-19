@@ -33,21 +33,25 @@ const K: [u32; 64] = [
     0x748f82ee, 0x78a5636f, 0x84c87814, 0x8cc70208, 0x90befffa, 0xa4506ceb, 0xbef9a3f7, 0xc67178f2,
 ];
 
+/// Struct for initialization
 pub struct ZotSha256;
 
 impl ZotSha256 {
+    /// Method that returns hex encoded sha256 value
     pub fn encode_to_hex(data: &[u8]) -> String {
         let mut sha256 = Sha256::default();
         sha256.update(data);
         hex::encode(sha256.finish())
     }
 
+    /// Method that returns base64 encoded sha256 value
     pub fn encode_to_base64(data: &[u8]) -> String {
         let mut sha256 = Sha256::default();
         sha256.update(data);
         base64::encode(sha256.finish())
     }
 
+    /// Method that returns sha256 value in bytes
     pub fn encode_to_bytes(data: &[u8]) -> Vec<u8> {
         let mut sha256 = Sha256::default();
         sha256.update(data);
@@ -64,6 +68,7 @@ struct Sha256 {
 }
 
 impl Default for Sha256 {
+    /// Used for initialization with default params.
     fn default() -> Self {
         Self {
             state: H,
