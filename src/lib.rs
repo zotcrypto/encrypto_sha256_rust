@@ -80,15 +80,6 @@ impl Default for Sha256 {
 }
 
 impl Sha256 {
-    fn with_state(state: [u32; 8]) -> Self {
-        Self {
-            state,
-            completed_data_blocks: 0,
-            pending: [0u8; 64],
-            num_pending: 0,
-        }
-    }
-
     fn update_state(state: &mut [u32; 8], data: &[u8; 64]) {
         let mut w = [0; 64];
         for (w, d) in w.iter_mut().zip(data.iter().step_by(4)).take(16) {
@@ -180,9 +171,5 @@ impl Sha256 {
             *h = h.to_be();
         }
         unsafe { *(self.state.as_ptr() as *const [u8; 32]) }
-    }
-
-    fn state(&self) -> [u32; 8] {
-        self.state
     }
 }
