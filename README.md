@@ -1,6 +1,6 @@
 ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=encrypto-sha256-rust)
-![Crates Badge](https://img.shields.io/crates/v/encrypto_sha256_rust)
-![Crates Downloads](https://img.shields.io/crates/d/encrypto_sha256_rust)
+![Crates Badge](https://img.shields.io/crates/v/encrypto_sha256)
+![Crates Downloads](https://img.shields.io/crates/d/encrypto_sha256)
 
 
 # About Project

@@ -1,6 +1,6 @@
 [package]
 name = "encrypto_sha256"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Sandip sandip@ssdd.dev"]
 description = "stunning-encrypto is cross platform end-to-end encryption dependency. And this is Sha256 extension of the same"
