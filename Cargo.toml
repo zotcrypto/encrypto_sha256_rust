@@ -7,7 +7,7 @@ description = "stunning-encrypto is cross platform end-to-end encryption depende
 homepage = "https://www.ssdd.dev/zot/crypto/sha256"
 repository = "https://github.com/zotcrypto/encrypto_sha256_rust"
 readme = "README.md"
-keywords = ["AES", "end-to-end-encrypton", "stunning-encrypto", "encryption", "rust-e2ee"]
+keywords = ["sha256", "end-to-end-encrypton", "stunning-encrypto", "encryption", "rust-e2ee"]
 categories = ["cryptography"]
 license = "MIT"
 
