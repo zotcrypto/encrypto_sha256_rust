@@ -16,10 +16,10 @@ Easy to use Sha256 hash for rust, compatible with all other ZotCrypto projects!
 
 ## Implementation
 ### Cargo
-`encrypto_aes =` [latest](https://crates.io/crates/encrypto_sha256)
+`encrypto_sha256 =` [latest](https://crates.io/crates/encrypto_sha256)
 
 
-## RSA
+## Sha256
 
 
 ### Documentation will be published soon at our [website](https://www.ssdd.dev/zot/crypto/sha256/rust)
